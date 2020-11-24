@@ -62,8 +62,8 @@ A 128-byte header (same as FLC/FLI header, but with other magic number):
     WORD        Speed (milliseconds between frame, like in FLC files)
                 DEPRECATED: You should use the frame duration field
                 from each frame header
-    DWORD       Set be 0
-    DWORD       Set be 0
+    DWORD       Set to 0
+    DWORD       Set to 0
     BYTE        Palette entry (index) which represent transparent color
                 in all non-background layers (only for Indexed sprites).
     BYTE[3]     Ignore these bytes
