@@ -83,7 +83,7 @@ A 128-byte header (same as FLC/FLI header, but with other magic number):
 After the header come the "frames" data. Each frame has this little
 header of 16 bytes:
 
-    DWORD       Bytes in this frame
+    DWORD       Bytes in this frame (including 16 byte header)
     WORD        Magic number (always 0xF1FA)
     WORD        Old field which specifies the number of "chunks"
                 in this frame. If this value is 0xFFFF, we might
